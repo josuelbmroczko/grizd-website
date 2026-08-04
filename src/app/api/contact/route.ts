@@ -4,8 +4,6 @@ import { Resend } from "resend";
 
 export const runtime = "nodejs";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
@@ -37,6 +35,7 @@ export async function POST(request: NextRequest) {
   // Tenta enviar o email via Resend
   try {
     if (process.env.RESEND_API_KEY) {
+      const resend = new Resend(process.env.RESEND_API_KEY);
       await resend.emails.send({
         from: "onboarding@resend.dev",
         to: "josuelbeserramroczko@gmail.com",
