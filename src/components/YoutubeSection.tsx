@@ -29,7 +29,7 @@ export function YoutubeSection() {
           <div className="aspect-video w-full">
             <iframe
               className="h-full w-full"
-              src="https://www.youtube.com/embed?listType=user_uploads&list=ProdbyGrizD"
+              src={`https://www.youtube.com/embed/${site.youtubeFeaturedVideo}`}
               title="ProdbyGrizD - YouTube"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

@@ -15,6 +15,7 @@ export const site = {
   youtubeHandle: "ProdbyGrizD",
   youtubeSubs: "4.5k subscribers",
   youtubeViews: "1.1M+ Views",
+  youtubeFeaturedVideo: "Jg5Pl31cVtA",
   beatstore: "https://grizd.beatstars.com/",
   beatstoreEmbed: "https://player.beatstars.com/?storeId=152735",
   fullCredits: "https://credits.muso.ai/profile/63862e94-3375-41ba-8412-70c88b37ce4b/credits",
