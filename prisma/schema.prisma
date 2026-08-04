@@ -1,0 +1,41 @@
+// ============================================================================
+// Prisma schema — pronto para PostgreSQL.
+//
+// Este projeto ainda NÃO está conectado a nenhum banco de dados.
+// Quando quiser conectar (ex: Vercel Postgres, Neon, Supabase, Railway...):
+//   1. Adicione a variável DATABASE_URL nas Environment Variables da Vercel
+//      (e/ou no seu .env local, veja .env.example)
+//   2. Rode: npx prisma migrate dev --name init
+//   3. Rode: npx prisma generate
+// ============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Mensagens recebidas pelo formulário de contato do site
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+  readAt    DateTime?
+
+  @@map("contact_messages")
+}
+
+// Usuário administrador — para a futura página /admin
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+
+  @@map("admin_users")
+}
