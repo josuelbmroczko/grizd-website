@@ -36,54 +36,72 @@ export type Track = {
   spotifyUrl: string;
   role: string;
   streams: string;
+  title?: string;
+  coverUrl?: string;
 };
 
 // IDs extraídos das URLs do Spotify fornecidas no briefing
 export const tracks: Track[] = [
   {
     id: "79sxLcWuXKl11sK8p1jZJS",
+    title: "Frankenstein: Parte por Parte",
+    coverUrl: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0264387fab5bcec93324891ebf",
     spotifyUrl: "https://open.spotify.com/track/79sxLcWuXKl11sK8p1jZJS",
     role: "Composer • Co-writer • Producer",
     streams: "9.700.000+ Streams",
   },
   {
     id: "4spfEtudoQsjOILsT2sHID",
+    title: "Billy Kid: Cavaleiro da Constelação",
+    coverUrl: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026da01698fc9a572034414e54",
     spotifyUrl: "https://open.spotify.com/track/4spfEtudoQsjOILsT2sHID",
     role: "Composer • Co-writer • Producer • Mixing",
     streams: "3.700.000+ Streams",
   },
   {
     id: "1kYiSaFo2hccIqtE2PvEV6",
+    title: "TATUSIU",
+    coverUrl: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d1079d44bff6030e43e2b18c",
     spotifyUrl: "https://open.spotify.com/track/1kYiSaFo2hccIqtE2PvEV6",
     role: "Composer • Co-writer • Producer • Guitarist • Mixing • Mastering",
     streams: "1.600.000+ Streams",
   },
   {
     id: "2iv29FcgoDBXdEGIPIgeOq",
+    title: "Ratakachu",
+    coverUrl: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02902f7de71ac5ba3a4440eaa1",
     spotifyUrl: "https://open.spotify.com/track/2iv29FcgoDBXdEGIPIgeOq",
     role: "Composer • Co-writer • Producer • Guitarist",
     streams: "490.000+ Streams",
   },
   {
     id: "72on8RepQj8zeyjpDVxbuW",
+    title: "Bloodless",
+    coverUrl: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e021d0f9ae59f7ed20c1eb0defa",
     spotifyUrl: "https://open.spotify.com/track/72on8RepQj8zeyjpDVxbuW",
     role: "Composer • Co-writer • Producer",
     streams: "1.300.000+ Streams",
   },
   {
     id: "4ttkgU0TFkiYJE1CxDzq1r",
+    title: "النجدة",
+    coverUrl: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0291e887410e7169d94768ca7d",
     spotifyUrl: "https://open.spotify.com/track/4ttkgU0TFkiYJE1CxDzq1r",
     role: "Composer • Co-writer • Producer • Guitarist",
     streams: "3.000.000+ Streams",
   },
   {
     id: "3SApiFVy90SHtONrVVWS3Y",
+    title: "Reflexos do Crepúsculo",
+    coverUrl: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02da62fa59ff3e02d5b8e835f2",
     spotifyUrl: "https://open.spotify.com/track/3SApiFVy90SHtONrVVWS3Y",
     role: "Composer • Co-writer • Producer",
     streams: "590.000+ Streams",
   },
   {
     id: "7I2mUQd0gSibvUnIc9r4cv",
+    title: "First Date",
+    coverUrl: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0228ae6b94d49178d5f0625cf1",
     spotifyUrl: "https://open.spotify.com/track/7I2mUQd0gSibvUnIc9r4cv",
     role: "Composer • Co-writer • Producer • Mixing",
     streams: "400.000+ Streams",
