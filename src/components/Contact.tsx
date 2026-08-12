@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { site } from "@/lib/content";
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Instagram, Linkedin, Download } from "lucide-react";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -116,30 +116,35 @@ export function Contact() {
           )}
         </form>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
+        <div className="mt-10 flex flex-col items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <a
+              href={site.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-silver-400 transition hover:text-silver-100"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a
+              href={site.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-silver-400 transition hover:text-silver-100"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+          </div>
+
           <a
-            href={`mailto:${site.email}`}
-            className="flex items-center gap-2 text-sm text-silver-400 transition hover:text-silver-100"
+            href={site.cvFile}
+            download
+            className="card-hover inline-flex items-center gap-2 rounded-full border border-hairline bg-panel px-6 py-2.5 text-xs font-medium text-silver-200 shadow-card transition hover:bg-charcoal"
           >
-            <Mail className="h-4 w-4" /> {site.email}
-          </a>
-          <a
-            href={site.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-silver-400 transition hover:text-silver-100"
-            aria-label="Instagram"
-          >
-            <Instagram className="h-5 w-5" />
-          </a>
-          <a
-            href={site.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-silver-400 transition hover:text-silver-100"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="h-5 w-5" />
+            <Download className="h-4 w-4" />
+            Download my CV
           </a>
         </div>
       </div>

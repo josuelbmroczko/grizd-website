@@ -22,8 +22,8 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#home" className="font-display text-sm tracking-widest text-silver-100">
-          KS
+        <a href="#home" className="flex items-center">
+          <img src="/logo.png" alt="GrizD Logo" className="h-8 w-auto object-contain" />
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">

@@ -18,13 +18,11 @@ export default function HomePage() {
       <main>
         <Hero />
         <MusicProduction />
+        <AudioPostProduction />
         <YoutubeSection />
         <BeatStore />
-        <AudioPostProduction />
         <Companies />
         <AboutMe />
-        <Expertise />
-        <Resume />
         <Contact />
       </main>
       <Footer />

@@ -73,3 +73,12 @@ textarea:focus-visible {
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee-right {
+  animation: marquee-right 25s linear infinite;
+}

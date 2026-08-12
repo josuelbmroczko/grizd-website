@@ -25,8 +25,8 @@ export function EqBars({ className = "" }: { className?: string }) {
 export function SectionDivider() {
   return (
     <div className="mx-auto flex w-full max-w-6xl items-center gap-4 px-6" aria-hidden="true">
-      <div className="h-px flex-1 bg-hairline" />
-      <svg width="64" height="16" viewBox="0 0 64 16" fill="none">
+      <div className="h-px flex-1 bg-gradient-to-r from-transparent to-hairline" />
+      <svg width="64" height="16" viewBox="0 0 64 16" fill="none" className="opacity-40">
         <path
           d="M0 8 L8 8 L11 2 L15 14 L19 4 L22 12 L26 8 L34 8 L38 3 L42 13 L46 6 L49 10 L53 8 L64 8"
           stroke="#5C5C66"
@@ -34,7 +34,7 @@ export function SectionDivider() {
           fill="none"
         />
       </svg>
-      <div className="h-px flex-1 bg-hairline" />
+      <div className="h-px flex-1 bg-gradient-to-l from-transparent to-hairline" />
     </div>
   );
 }

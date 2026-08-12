@@ -29,7 +29,7 @@ export function BeatStore() {
           <iframe
             src={site.beatstoreEmbed}
             width="100%"
-            height="800"
+            height="500"
             style={{ maxWidth: "1024px", border: 0, display: "block", margin: "0 auto" }}
             title="GrizD BeatStars store"
             loading="lazy"

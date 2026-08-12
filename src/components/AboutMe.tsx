@@ -1,4 +1,4 @@
-import { aboutParagraphs, highlights } from "@/lib/content";
+import { aboutParagraphs, highlights, expertise } from "@/lib/content";
 import { SectionDivider } from "./Waveform";
 
 export function AboutMe() {
@@ -8,9 +8,7 @@ export function AboutMe() {
         <div>
           {/* Substitua por <Image src="/images/kristi-portrait.jpg" ... /> quando disponível */}
           <div className="aspect-[4/5] w-full max-w-[280px] rounded-2xl border border-hairline bg-panel-gradient shadow-card">
-            <div className="flex h-full w-full items-center justify-center font-display text-4xl text-silver-500">
-              KS
-            </div>
+            <img src="/logo.png" alt="GrizD Logo" className="h-full w-full object-contain p-8" />
           </div>
         </div>
 
@@ -35,6 +33,20 @@ export function AboutMe() {
                 <p className="font-mono text-xl text-silver-100 sm:text-2xl">{h.value}</p>
                 <p className="mt-1 text-[11px] uppercase tracking-wide text-silver-500">
                   {h.label}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {expertise.map((item) => (
+              <div
+                key={item.title}
+                className="card-hover rounded-2xl border border-hairline bg-panel p-5 shadow-card"
+              >
+                <h3 className="font-display text-base text-silver-100">{item.title}</h3>
+                <p className="mt-2 text-xs leading-relaxed text-silver-400">
+                  {item.description}
                 </p>
               </div>
             ))}
