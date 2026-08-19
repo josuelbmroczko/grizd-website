@@ -10,6 +10,7 @@ import { Expertise } from "@/components/Expertise";
 import { Resume } from "@/components/Resume";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { SectionReveal } from "@/components/SectionReveal";
 
 export default function HomePage() {
   return (
@@ -17,15 +18,32 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
-        <MusicProduction />
-        <AudioPostProduction />
-        <YoutubeSection />
-        <BeatStore />
-        <Companies />
-        <AboutMe />
-        <Contact />
+        <SectionReveal>
+          <MusicProduction />
+        </SectionReveal>
+        <SectionReveal delay={50}>
+          <AudioPostProduction />
+        </SectionReveal>
+        <SectionReveal direction="left" delay={100}>
+          <YoutubeSection />
+        </SectionReveal>
+        <SectionReveal>
+          <BeatStore />
+        </SectionReveal>
+        <SectionReveal delay={50}>
+          <Companies />
+        </SectionReveal>
+        <SectionReveal direction="right">
+          <AboutMe />
+        </SectionReveal>
+        <SectionReveal delay={100}>
+          <Contact />
+        </SectionReveal>
       </main>
-      <Footer />
+      <SectionReveal>
+        <Footer />
+      </SectionReveal>
     </>
   );
 }
+

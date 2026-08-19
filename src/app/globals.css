@@ -82,3 +82,29 @@ textarea:focus-visible {
 .animate-marquee-right {
   animation: marquee-right 25s linear infinite;
 }
+
+/* ── Section Reveal Transitions ── */
+.section-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-reveal-up {
+  transform: translateY(48px);
+}
+.section-reveal-down {
+  transform: translateY(-48px);
+}
+.section-reveal-left {
+  transform: translateX(48px);
+}
+.section-reveal-right {
+  transform: translateX(-48px);
+}
+
+.section-reveal.section-revealed {
+  opacity: 1;
+  transform: translate(0, 0);
+}
