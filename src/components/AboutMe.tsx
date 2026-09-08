@@ -1,5 +1,6 @@
 import { aboutParagraphs, highlights, expertise } from "@/lib/content";
 import { SectionDivider } from "./Waveform";
+import { Companies } from "./Companies";
 
 export function AboutMe() {
   return (
@@ -8,12 +9,10 @@ export function AboutMe() {
         <div>
           {/* Substitua por <Image src="/images/kristi-portrait.jpg" ... /> quando disponível */}
           <div className="aspect-[4/5] w-full max-w-[280px] rounded-2xl border border-hairline bg-panel-gradient shadow-card">
-            <img src="/logo.png" alt="GrizD Logo" className="h-full w-full object-contain p-8" />
           </div>
         </div>
 
         <div>
-          <p className="eyebrow mb-3">About</p>
           <h2 className="font-display text-3xl text-silver-100 sm:text-4xl">About Me</h2>
 
           <div className="mt-6 space-y-4">
@@ -51,7 +50,12 @@ export function AboutMe() {
               </div>
             ))}
           </div>
+
         </div>
+      </div>
+
+      <div className="mt-24 w-full">
+        <Companies />
       </div>
 
       <div className="mt-24">

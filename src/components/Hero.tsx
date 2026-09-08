@@ -29,7 +29,6 @@ export function Hero() {
         <div className="flex animate-fadeUp items-center gap-4">
           <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border border-hairline bg-panel-gradient shadow-glow md:h-20 md:w-20">
             {/* Substitua por <Image src="/images/kristi-portrait.jpg" ... /> quando tiver a foto */}
-            <img src="/logo.png" alt="GrizD Logo" className="h-full w-full object-contain p-2" />
           </div>
           <EqBars className="opacity-70" />
         </div>

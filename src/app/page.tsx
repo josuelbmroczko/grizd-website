@@ -4,7 +4,7 @@ import { MusicProduction } from "@/components/MusicProduction";
 import { YoutubeSection } from "@/components/YoutubeSection";
 import { BeatStore } from "@/components/BeatStore";
 import { AudioPostProduction } from "@/components/AudioPostProduction";
-import { Companies } from "@/components/Companies";
+
 import { AboutMe } from "@/components/AboutMe";
 import { Expertise } from "@/components/Expertise";
 import { Resume } from "@/components/Resume";
@@ -29,9 +29,6 @@ export default function HomePage() {
         </SectionReveal>
         <SectionReveal>
           <BeatStore />
-        </SectionReveal>
-        <SectionReveal delay={50}>
-          <Companies />
         </SectionReveal>
         <SectionReveal direction="right">
           <AboutMe />

@@ -6,13 +6,7 @@ export function BeatStore() {
   return (
     <section className="bg-void py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="eyebrow mb-3">Store</p>
         <h2 className="font-display text-3xl text-silver-100 sm:text-4xl">Beat Store</h2>
-
-        <p className="mt-4 max-w-2xl text-silver-400">
-          I create professional beats and custom instrumentals for independent and
-          signed artists worldwide.
-        </p>
 
         <div className="mt-5 flex flex-wrap gap-2">
           {beatGenres.map((genre) => (

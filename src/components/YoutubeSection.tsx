@@ -18,7 +18,7 @@ export function YoutubeSection() {
           <div className="lg:col-span-4 flex flex-col items-start gap-8">
             <div className="flex items-center gap-4">
               <div className="h-16 w-16 rounded-full bg-charcoal flex items-center justify-center border border-hairline overflow-hidden shadow-card">
-                <span className="font-display text-3xl font-bold text-white">G</span>
+                <img src="/logo.png" alt="GrizD Logo" className="h-full w-full object-contain p-2" />
               </div>
               <div>
                 <h3 className="font-display text-2xl font-bold text-white">{site.youtubeHandle}</h3>

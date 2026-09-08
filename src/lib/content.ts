@@ -160,16 +160,15 @@ export const videoProjects: VideoProject[] = [
   },
 ];
 
-// Nomes apenas para referência interna (não exibidos no site — só os logos aparecem)
-export const companies = [
-  "NGOP Media",
-  "FC Lausanne-Sport",
-  "BLVCK Paris",
-  "AUDI",
-  "Kredo.al",
-  "TOK Digital Agency",
-  "Porsche",
-  "Midea",
+export const companyLogos = [
+  { name: "Audi", src: "/images/logos/audi-logo-audi-icon-free-free-vector.jpg" },
+  { name: "Midea", src: "/images/logos/midea-logo.webp" },
+  { name: "Company 3", src: "/images/logos/1687512290063.jpg" },
+  { name: "Company 4", src: "/images/logos/OIP (1).webp" },
+  { name: "Company 5", src: "/images/logos/OIP (2).webp" },
+  { name: "Company 6", src: "/images/logos/OIP (3).webp" },
+  { name: "Company 7", src: "/images/logos/OIP (4).webp" },
+  { name: "Company 8", src: "/images/logos/OIP.webp" },
 ];
 
 export const highlights = [
