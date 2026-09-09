@@ -27,9 +27,7 @@ export function Hero() {
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-8 px-6">
         <div className="flex animate-fadeUp items-center gap-4">
-          <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border border-hairline bg-panel-gradient shadow-glow md:h-20 md:w-20">
-            {/* Substitua por <Image src="/images/kristi-portrait.jpg" ... /> quando tiver a foto */}
-          </div>
+
           <EqBars className="opacity-70" />
         </div>
 
