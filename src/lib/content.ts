@@ -19,7 +19,7 @@ export const site = {
   beatstore: "https://grizd.beatstars.com/",
   beatstoreEmbed: "https://player.beatstars.com/?storeId=152735",
   fullCredits: "https://credits.muso.ai/profile/63862e94-3375-41ba-8412-70c88b37ce4b/credits",
-  cvFile: "/cv/kristi-skendaj-cv.pdf",
+  cvFile: "https://drive.google.com/uc?export=download&id=1Do2FaVMiCfAtuBAZ1pSBsd95GxYKVlkW",
 };
 
 export const nav = [
@@ -27,7 +27,7 @@ export const nav = [
   { label: "Music", href: "#music" },
   { label: "Audio", href: "#audio" },
   { label: "About", href: "#about" },
-  { label: "Resume", href: "#resume" },
+  { label: "Resume", href: site.cvFile },
   { label: "Contact", href: "#contact" },
 ];
 

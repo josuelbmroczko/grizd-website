@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { nav } from "@/lib/content";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,18 +18,24 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled ? "border-b border-hairline bg-void/80 backdrop-blur-md" : "bg-transparent"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled ? "border-b border-hairline bg-void/80 backdrop-blur-md" : "bg-transparent"
+        }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#home" className="flex items-center">
-          <span className="font-display text-xl font-bold tracking-widest text-silver-100">GRIZD</span>
+          <Image 
+            src="/logo.png" 
+            alt="Logo" 
+            width={120} 
+            height={48} 
+            className="h-20 w-auto object-contain" 
+            priority 
+          />
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
           {nav.map((item) => (
-            <li key={item.href}>
+            <li key={item.label}>
               <a
                 href={item.href}
                 className="text-xs uppercase tracking-widest text-silver-400 transition hover:text-silver-100"
@@ -51,7 +58,7 @@ export function Navbar() {
       {open && (
         <ul className="flex flex-col gap-1 border-t border-hairline bg-void px-6 py-4 md:hidden">
           {nav.map((item) => (
-            <li key={item.href}>
+            <li key={item.label}>
               <a
                 href={item.href}
                 onClick={() => setOpen(false)}

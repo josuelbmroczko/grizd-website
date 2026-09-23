@@ -1,14 +1,20 @@
 import { aboutParagraphs, highlights, expertise } from "@/lib/content";
 import { SectionDivider } from "./Waveform";
 import { Companies } from "./Companies";
+import Image from "next/image";
 
 export function AboutMe() {
   return (
     <section id="about" className="bg-void py-24">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-[280px_1fr]">
         <div>
-          {/* Substitua por <Image src="/images/kristi-portrait.jpg" ... /> quando disponível */}
-          <div className="aspect-[4/5] w-full max-w-[280px] rounded-2xl border border-hairline bg-panel-gradient shadow-card">
+          <div className="relative aspect-[4/5] w-full max-w-[280px] overflow-hidden rounded-2xl border border-hairline shadow-card">
+            <Image
+              src="/image.png"
+              alt="Kristi Skëndaj"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
 
